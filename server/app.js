@@ -2,9 +2,9 @@ const express = require("express");
 const app = express();
 const authRouter = require("./routes/auth");
 
-app.get("/", (req, res) => {
-  res.json({ msg: "Home page" });
-});
+// app.get("/", (req, res) => {
+//   res.json({ msg: "Home page" });
+// });
 
 app.use("/auth", authRouter);
 
