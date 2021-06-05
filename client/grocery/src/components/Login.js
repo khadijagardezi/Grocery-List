@@ -1,9 +1,15 @@
 import React from "react";
+import axios from "axios"
 
 const Login = () => {
   // form submitting
   const submitForm = (e) => {
     e.preventDefault();
+
+    axios.post("http://localhose:3001/auth/login").then(res) => {
+      console.log(res);
+    }
+
     console.log("Logged in!!!");
   };
 

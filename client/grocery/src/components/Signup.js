@@ -4,6 +4,11 @@ const Signup = () => {
   // form submitting
   const submitForm = (e) => {
     e.preventDefault();
+
+    axios.post("http://localhose:3001/auth/register").then(res) => {
+      console.log(res);
+    }
+
     console.log("Sign up!!!");
   };
 
