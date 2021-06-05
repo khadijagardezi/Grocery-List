@@ -1,3 +1,4 @@
+import axios from "axios";
 import React from "react";
 
 const Signup = () => {
@@ -5,9 +6,12 @@ const Signup = () => {
   const submitForm = (e) => {
     e.preventDefault();
 
-    axios.post("http://localhose:3001/auth/register").then(res) => {
+    // axios.post("http://localhose:3001/auth/register").then((res).then => {
+    //   console.log(res);
+    // }) ;
+    axios.post("http://localhost:3001/auth/register").then((res) => {
       console.log(res);
-    }
+    });
 
     console.log("Sign up!!!");
   };
