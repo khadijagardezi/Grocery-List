@@ -1,5 +1,6 @@
 import "./App.css";
-import { Switch, Route, Link } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
+
 import Signup from "./components/Signup";
 import Login from "./components/Login";
 import Home from "./components/Home";
@@ -10,11 +11,11 @@ function App() {
       {/* switching pages */}
 
       <Switch>
-        <Route path="/signup">
+        <Route path="/Signup">
           <Signup />
         </Route>
 
-        <Route path="/login">
+        <Route path="/Login">
           <Login />
         </Route>
 
