@@ -10,11 +10,30 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 app.use("/auth", authRouter);
 
-mongoose.connect(
-  " mongodb://127.0.0.1:27017/grocery?compressors=disabled&gssapiServiceName=mongodb",
-  { useNewUrlParser: true },
-  () => {
-    console.log("Database Connected!");
-    app.listen(3001, console.log("Server Started!!"));
+(async () => {
+  try {
+    await mongoose.connect(
+      "mongodb://127.0.0.1:27017/grocery?gssapiServiceName=mongodb",
+      { useNewUrlParser: true, useUnifiedTopology: true },
+      () => {
+        console.log("Database Connected!");
+        app.listen(3001, console.log("Server Started!!"));
+      }
+    );
+  } catch (error) {
+    console.log(error.message);
   }
-);
+})();
+
+// makeConnection();
+
+// async function makeConnection() {
+//   await mongoose.connect(
+//     "mongodb://127.0.0.1:27017/grocery?gssapiServiceName=mongodb",
+//     { useNewUrlParser: true, useUnifiedTopology: true },
+//     () => {
+//       console.log("Database Connected!");
+//       app.listen(3001, console.log("Server Started!!"));
+//     }
+//   );
+// }
