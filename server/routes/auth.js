@@ -23,8 +23,26 @@ router.post("/register", async (req, res) => {
   }
 });
 
-router.post("/login", (req, res) => {
-  res.json({ msg: "User Logged in!" });
+router.post("/login", async (req, res) => {
+  const { email, password } = req.body;
+
+  try {
+    const user = await User.findOne({ email });
+
+    if (!user) {
+      return res.status(401).json({ error: "Invalid Email" });
+    }
+
+    if (password == user.password) {
+      res.json({
+        msg: "Password matched",
+      });
+    } else {
+      res.json({ error: "Invalid Passowrd" });
+    }
+  } catch (error) {}
+
+  res.json({ msg: "Unexpected!!!" });
 });
 
 module.exports = router;
