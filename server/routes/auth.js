@@ -4,6 +4,9 @@ const router = express.Router();
 // making 2 routes -- 1 for registeration and 1 for login
 
 router.post("/register", (req, res) => {
+  console.log(req.query);
+  // console.log(req.headers);
+  console.log(req.body);
   res.json({ msg: "User Registered!" });
 });
 
