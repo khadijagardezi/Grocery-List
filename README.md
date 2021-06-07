@@ -1,5 +1,8 @@
-# Grocery List
-### Frontend
+# Hello from Tribe 4! 👋
+
+## Grocery List 🏬
+
+### Frontend 💻
 ```
 cd client
 cd grocery
@@ -16,20 +19,20 @@ npm start
 ## First Screen
 ![Main](grocery-1.JPG)
 
-## Dont have account? SIGN UP! 
+## Don't have account? SIGN UP! 
 ![](SignUp.JPG)
 
 ## Have account already? Perfect! Sign In
 ![](logIn.JPG)
 
 1. Developed front-end pages using react.js
-- - home.js, 
-- - signup.js
-- - login.js
+  - home.js, 
+  - signup.js
+  - login.js
 
 2. We have made a backend router named 
-- - auth.js 
-- - 2 router paths named /auth/register and/auth/login.
+  - auth.js 
+  - 2 router paths named /auth/register and/auth/login.
 
 3. Developed a database named grocery.
 
@@ -41,7 +44,7 @@ npm start
 - City
 - Password
 
-#### Technolgies :
+## Technolgies we used :
 - HTML
 - CSS
 - JavaScript 
@@ -51,7 +54,7 @@ npm start
 - Mongoose
 - Auth
 
-#### Contributors 
+## Contributors 
 
 - Asad Faraz
 - Khadija Gardezi
