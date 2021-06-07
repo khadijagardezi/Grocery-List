@@ -1,20 +1,21 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./Home.css";
 
-const home = () => {
+const Home = () => {
   return (
-    <div>
+    <div className="container">
       <h1>Grocery App</h1>
 
       {/* Buttons */}
-      <Link to="/signup">
-        <button>Sign Up</button>
+      <Link to="/Signup">
+        <button className="btn">Sign Up</button>
       </Link>
-      <Link to="/login">
-        <button>Login</button>
+      <Link to="/Login">
+        <button className="btn">Login</button>
       </Link>
     </div>
   );
 };
 
-export default home;
+export default Home;

@@ -38,7 +38,7 @@ router.post("/login", async (req, res) => {
         msg: "Password matched",
       });
     } else {
-      res.json({ error: "Invalid Passowrd" });
+      res.json({ error: "Invalid Password" });
     }
   } catch (error) {}
 
