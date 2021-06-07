@@ -1,18 +1,21 @@
 const express = require("express");
 const router = express.Router();
 const User = require("../model/user");
+const bcrypt = require("bcrypt");
 
 // making 2 routes -- 1 for registeration and 1 for login
 
 router.post("/register", async (req, res) => {
   const { name, email, city, password } = req.body;
+  const saltPassword = await bcrypt.genSalt(10);
+  const securePassword = await bcrypt.hash(password, saltPassword);
 
   try {
     const user = new User({
       name,
       email,
       city,
-      password,
+      password: securePassword,
     });
     await user.save();
 
