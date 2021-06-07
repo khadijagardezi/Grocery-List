@@ -12,7 +12,7 @@ app.use("/auth", authRouter);
 
 (async () => {
   try {
-    await mongoose.connect(
+    mongoose.connect(
       "mongodb://127.0.0.1:27017/grocery?gssapiServiceName=mongodb",
       { useNewUrlParser: true, useUnifiedTopology: true },
       () => {
