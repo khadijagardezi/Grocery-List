@@ -115,7 +115,7 @@ class Signup extends Component {
         </form>
         {/* <!-- Link back to login page in case account already present --> */}
         <p>
-          Already have an account?<Link to="/Login">Login Here</Link>
+          Already have an account?<Link to="/Login"> <span class="SignUp">Login Here</span></Link>
         </p>
       </div>
     );

@@ -1,7 +1,7 @@
 body {
   margin: 0px;
   height: 100vh;
-  background-image: url("./background.jpg");
+  background-image: url("https://images.pexels.com/photos/319382/pexels-photo-319382.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -13,7 +13,7 @@ body {
 }
 
 .container {
-  background-color: rgba(78, 75, 92, 0.6);
+  background-color: rgba(166, 165, 170, 0.6);
   border-radius: 20px;
   padding: 10px;
   text-align: center;
@@ -26,12 +26,12 @@ body {
   cursor: pointer;
   border-radius: 4px;
   width: 90%;
-  background-color: teal;
+  background-color: rgb(224, 140, 30);
   margin: 1em;
   padding: 1rem 2rem;
   font-weight: bold;
   font-size: 1.015rem;
-  color: white;
+  color: rgb(32, 30, 30);
   border: none;
   outline: none;
 }

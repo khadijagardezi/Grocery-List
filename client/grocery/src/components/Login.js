@@ -45,7 +45,7 @@ const Login = () => {
 
       {/* <!-- Link to Sign page in case of new account --> */}
       <p>
-        Don't have an Account?<Link to="/Signup">SignUp Here</Link>
+        Don't have an Account?<Link to="/Signup"> <span class="SignUp">SignUp Here</span></Link>
       </p>
     </div>
   );

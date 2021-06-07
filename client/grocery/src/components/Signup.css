@@ -1,5 +1,5 @@
 body {
-  background-image: url("./background.jpg");
+  background-image: url("https://images.pexels.com/photos/319382/pexels-photo-319382.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0;
@@ -11,6 +11,10 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+}
+
+.SignUp {
+  margin-left: 20px;
 }
 
 .maincon {
@@ -81,11 +85,11 @@ p {
   cursor: pointer;
   border-radius: 4px;
   width: 100%;
-  background-color: teal;
+  background-color: rgb(228, 124, 27);
   padding: 1rem 2rem;
   font-weight: bold;
   font-size: 1.015rem;
-  color: white;
+  color: rgb(51, 48, 48);
   border: none;
   outline: none;
 }
